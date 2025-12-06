@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thought Keeper</h1>
+        <p class="subtitle">Store your thoughts and quotes locally</p>
+        
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="quoteInput" 
+                placeholder="What's on your mind?"
+                class="quote-input"
+            >
+            <button id="addBtn" class="btn btn-add">Save</button>
+        </div>
+        
+        <div class="quotes-section">
+            <h2>Your Collection</h2>
+            <ul id="quotesList" class="quotes-list">
+                
+            </ul>
+            <p id="emptyMessage" class="empty-message">Your collection is empty. Start saving thoughts above.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
