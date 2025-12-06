@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2d4a3e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #f5f1e8;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 650px;
+    width: 100%;
+    border: 1px solid #d4c5b0;
+}
+
+h1 {
+    color: #2d4a3e;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7d6b;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.quote-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #c9b99b;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    background: #fff;
+    color: #2d4a3e;
+}
+
+.quote-input:focus {
+    outline: none;
+    border-color: #8b7355;
+    background: #fffef9;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: normal;
+    border: 1px solid #8b7355;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.btn-add {
+    background: #8b7355;
+    color: #f5f1e8;
+}
+
+.btn-add:hover {
+    background: #7a6344;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quotes-section {
+    margin-top: 30px;
+}
+
+.quotes-section h2 {
+    color: #2d4a3e;
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+    font-weight: normal;
+    border-bottom: 1px solid #d4c5b0;
+    padding-bottom: 8px;
+}
+
+.quotes-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quote-item {
+    background: #fff;
+    padding: 16px 18px;
+    border-radius: 4px;
+    border: 1px solid #d4c5b0;
+    border-left: 3px solid #8b7355;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.quote-item:hover {
+    background: #fffef9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    flex: 1;
+    color: #2d4a3e;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.btn-delete {
+    background: #c9a882;
+    color: #f5f1e8;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid #b8966f;
+}
+
+.btn-delete:hover {
+    background: #b8966f;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.empty-message {
+    text-align: center;
+    color: #8b7355;
+    font-style: italic;
+    padding: 35px 20px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px dashed #d4c5b0;
+}
+
+.empty-message.hidden {
+    display: none;
+}
